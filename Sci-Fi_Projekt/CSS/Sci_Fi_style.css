@@ -1,0 +1,59 @@
+h1{
+	background-color:  #0595fc;
+	text-align: center;
+}
+body{
+	text-align: center;
+    background-color: silver;
+}
+
+.para1{
+	color: blue;
+}
+	
+h3 {
+  color:#FF8C00;   /* Farbe Dark-Orange */
+  font-size:28pt;  /* Größe 28pt   */
+  font-family:arial, "lucida console", sans-serif; /* Schriftart */
+}	
+.container {
+	position: relative;
+}
+ table, th, td {
+        margin: auto;
+        width: 20%;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+    
+    table {
+        transition: width 7s, height 7s;
+    }
+    
+    table:hover {
+        width: 1000px;
+        height: 200px;
+    }
+    
+    td {
+        text-align: center;
+    }
+    
+    tr {
+        background-color: coral;
+        animation-name: wata;
+        animation-duration: 14s;
+        animation-iteration-count: infinite;
+    }
+	 @keyframes wata {
+          10% {background-color: coral;}
+          25% {background-color: #9B5DE5;}
+          40% {background-color: #F15BB5;}
+          55% {background-color: #FEE440;}
+            70% {background-color: #00BBF9;}
+          85% {background-color: #00F5D4;}
+         100% {background-color: coral;}
+    }
+
+	
+	
