@@ -1,0 +1,155 @@
+﻿<Window x:Class="FrageAntwortSpiel_GUI.SelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrageAntwortSpiel_GUI"
+        mc:Ignorable="d"
+        Title="SelectionWindow"
+        Height="720"
+        Width="1280"
+        WindowStyle="None"
+        WindowState="Maximized"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <Style x:Key="MyBorder" TargetType="Border">
+            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="BorderBrush" Value="Navy"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+    </Window.Resources>
+
+    <Border x:Name="BorderGridSelectionWindow"
+                Background="White">
+        <Grid>
+            <Border x:Name="BorderLabelSelectionWindow"
+                        BorderBrush="Navy"
+                        BorderThickness="0,1,0,11"
+                        CornerRadius="25"
+                        Background="Transparent"
+                        Height="60" 
+                        Width="480"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"                       
+                        Margin="0,25,0,0">
+                <Label x:Name="LabelSelectionWindow"
+                           Content="Frage-Antwort-Spiel"
+                           Background="Transparent"
+                           Foreground="Orange"
+                           FontFamily="Ravie" 
+                           FontSize="32"
+                           FontStretch="Medium"
+                           FontWeight="Normal"
+                           Padding="15,0,0,0"/>
+            </Border>
+
+            <StackPanel x:Name="StackPanelGridSelectionWindow"
+                            Orientation="Vertical"
+                            Height="400"
+                            Width="1150"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Margin="0,0,0,50">
+                <Border x:Name="BorderListBoxSelectionWindow"
+                                Height="400"
+                                Width="1150"
+                                Background="Orange"
+                                BorderBrush="Navy"
+                                BorderThickness="5"
+                                CornerRadius="50">
+                    <ListBox x:Name="ListBoxSelectionWindow"
+                              Height="350"
+                              Width="1100"                          
+                              Background="Transparent"
+                              Foreground="Black"
+                              FontFamily="Garamond"
+                              FontSize="30"
+                              FontWeight="Black"
+                              SelectionChanged="ListBoxSelectionWindow_SelectionChanged"/>
+                </Border>
+            </StackPanel>
+
+            <Border x:Name="BorderTextBoxSelectionWindow"
+                    Style="{StaticResource MyBorder}"
+                    Height="45"
+                    Width="1105"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="0,0,0,105">
+                <TextBox x:Name="TextBoxSelectionWindow"
+                             Background="Transparent"
+                             Foreground="Black"
+                             FontFamily="Garamond"
+                             FontSize="30"
+                             FontWeight="Black"/>
+            </Border>
+
+            <Border x:Name="BorderLoadButtonSelectionWindow"
+                        Style="{StaticResource MyBorder}"
+                        Height="60" 
+                        Width="220"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom"
+                        Margin="10,0,0,10">
+                <Button x:Name="LoadButtonSelectionWindow"
+                            Content="Einlesen"
+                            FontFamily="Ravie"
+                            FontSize="30"
+                            Background="Transparent"
+                            Cursor="Hand"
+                            Click="LoadButtonSelectionWindow_Click"/>
+            </Border>
+
+            <Border x:Name="BorderSaveButtonSelectedWindow"
+                    Style="{StaticResource MyBorder}"
+                    Height="60" 
+                    Width="250"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="0,0,285,10">
+                <Button x:Name="SaveButtonSelectedWindow"
+                        Content="Speichern"
+                        FontFamily="Ravie"
+                        FontSize="30"
+                        Background="Transparent"
+                        Cursor="Hand"
+                        Click="SaveButtonSelectedWindow_Click"/>
+            </Border>
+
+            <Border x:Name="BorderCancelButtonSelectedWindow"
+                    Style="{StaticResource MyBorder}"
+                    Height="60" 
+                    Width="250"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="285,0,0,10">
+                <Button x:Name="CancelButtonSelectedWindow"
+                        Content="Verwerfen"
+                        FontFamily="Ravie"
+                        FontSize="30"
+                        Background="Transparent"
+                        Cursor="Hand"
+                        Click="CancelButtonSelectedWindow_Click"/>
+            </Border>
+
+            <Border x:Name="BorderExitButtonSelectionWindow"
+                        Style="{StaticResource MyBorder}"
+                        Height="60" 
+                        Width="220"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
+                        Margin="0,0,10,10">
+                <Button x:Name="ExitButtonSelectionWindow"
+                            Content="Schließen"
+                            FontFamily="Ravie"
+                            FontSize="30"
+                            Background="Transparent"
+                            Cursor="Hand"
+                            Click="ExitButtonSelectionWindow_Click"/>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

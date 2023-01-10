@@ -1,0 +1,42 @@
+Frage & Antwortspiel Rev. 1.6 (Mystery Retro Machine)
+----------------------------------------------------------------------------------------
+
+Running:
+
+Du startest das Spiel mittels >>Start<< Button..
+Dann kommen die Fragen und Du musst darauf mittels der
+Buttons auf der linken Seite antworten.. Die Zahlen
+auf den Buttons stellen die Zahlen der Antworten dar..
+
+Das Spiel kann jeder Zeit mittels >>Beenden<< Button beendet
+werden..
+
+Das gesamte Spiel und die Buttons zum Antworten sind extra in
+diesem Stil programmiert um den Charme der Datei, welche wir zur
+Verfügung gestellt bekommen haben und dafür eingelesen wird, 
+zu behalten..
+----------------------------------------------------------------------------------------
+
+Work:
+
+Der Editor kann schon eingesehen werden und auch benutzt werden,
+lediglich das Speichern und benutzen der neuen Fragen im Spiel
+befinden sich noch in der Entwicklung; werden aber demnächst
+fertiggestellt..
+----------------------------------------------------------------------------------------
+
+Developer-Infos:
+
+Hannah Kurzbein
+Arne Apitz
+Andre Heitfeld
+----------------------------------------------------------------------------------------
+
+KMA:
+
+*Presented by
+         )  (     
+        ( )( )    
+ 'Kiss My Ass'
+  Productions 
+       2022     

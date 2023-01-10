@@ -1,0 +1,265 @@
+﻿<Window x:Class="FrageAntwortSpiel_GUI.GameWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrageAntwortSpiel_GUI"
+        mc:Ignorable="d"
+        Title="GameWindows"
+        Height="720"
+        Width="1280"
+        WindowStyle="None"
+        WindowState="Maximized"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen">
+    
+    <Window.Resources>
+        <Style x:Key="MyBorder" TargetType="Border">
+            <Setter Property="Background" Value="Orange"/>
+            <Setter Property="BorderBrush" Value="Navy"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+    </Window.Resources>
+
+    <Border x:Name="BorderGridGameWindows"
+                Background="White">
+    <Grid>
+        <Border x:Name="BorderLabelGame"
+                    BorderBrush="Navy"
+                    BorderThickness="0,1,0,11"
+                    CornerRadius="25"
+                    Background="Transparent"
+                    Height="60" 
+                    Width="480"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Margin="0,25,0,0">
+            <Label x:Name="LabelGame"
+                       Content="Frage-Antwort-Spiel"
+                       Background="Transparent"
+                       Foreground="Orange"
+                       FontFamily="Ravie" 
+                       FontSize="32"
+                       FontStretch="Medium"
+                       FontWeight="Normal"
+                       Padding="15,0,0,2"/>
+        </Border>
+        <Border x:Name="BorderExitButtonGame"
+                    Style="{StaticResource MyBorder}"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Height="60" 
+                    Width="200"
+                    Margin="0,0,10,10">
+            <Button x:Name="ExitButtonGame"
+                        Content="Beenden"
+                        FontFamily="Ravie"
+                        FontSize="30"
+                        Background="Transparent"
+                        Cursor="Hand"
+                        Click="ExitButtonGame_Click"/>
+        </Border>
+        <Border x:Name="BorderGame"
+                    Height="520"
+                    Width="1150"
+                    Background="Orange"
+                    BorderBrush="Navy"
+                    BorderThickness="5"
+                    CornerRadius="50"/>
+        <StackPanel x:Name="StackPanelGame"
+                        Orientation="Vertical"
+                        Height="520"
+                        Width="1150"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+            <Border x:Name="BorderAntwort1"
+                        Style="{StaticResource MyBorder}"
+                        Height="40"
+                        Width="180"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="50,28,0,0">
+                <Button x:Name="ButtonAntwort1"
+                            Content="Antwort 1"
+                            Background="Transparent"
+                            FontFamily="Ravie"
+                            FontSize="22"
+                            Cursor="Hand"
+                            Click="ButtonAntwort1_Click"/>
+            </Border>
+            <Border x:Name="BorderAntwort2"
+                        Style="{StaticResource MyBorder}"
+                        Height="40"
+                        Width="180"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="50,20,0,0">
+                <Button x:Name="ButtonAntwort2"
+                            Content="Antwort 2"
+                            Background="Transparent"
+                            FontFamily="Ravie"
+                            FontSize="22"
+                            Cursor="Hand"
+                            Click="ButtonAntwort2_Click"/>
+            </Border>
+            <Border x:Name="BorderAntwort3"
+                        Style="{StaticResource MyBorder}"
+                        Height="40"
+                        Width="180"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="50,20,0,0">
+                <Button x:Name="ButtonAntwort3"
+                            Content="Antwort 3"
+                            Background="Transparent"
+                            FontFamily="Ravie"
+                            FontSize="22"
+                            Cursor="Hand"
+                            Click="ButtonAntwort3_Click"/>
+            </Border>
+            <Border x:Name="BorderAntwort4"
+                        Style="{StaticResource MyBorder}"
+                        Height="40"
+                        Width="180"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="50,20,0,0">
+                <Button x:Name="ButtonAntwort4"
+                            Content="Antwort 4"
+                            Background="Transparent"
+                            FontFamily="Ravie"
+                            FontSize="22"
+                            Cursor="Hand"
+                            Click="ButtonAntwort4_Click"/>
+            </Border>
+            <Border x:Name="BorderAntwort5"
+                        Style="{StaticResource MyBorder}"
+                        Height="40"
+                        Width="180"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="50,20,0,0">
+                <Button x:Name="ButtonAntwort5"
+                            Content="Antwort 5"
+                            Background="Transparent"
+                            FontFamily="Ravie"
+                            FontSize="22"
+                            Cursor="Hand"
+                            Click="ButtonAntwort5_Click"/>
+            </Border>
+            <Border x:Name="BorderAntwort6"
+                        Style="{StaticResource MyBorder}"
+                        Height="40"
+                        Width="180"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="50,20,0,0">
+                <Button x:Name="ButtonAntwort6"
+                            Content="Antwort 6"
+                            Background="Transparent"
+                            FontFamily="Ravie"
+                            FontSize="22"
+                            Cursor="Hand"
+                            Click="ButtonAntwort6_Click"/>
+            </Border>
+            <Border x:Name="BorderAntwort7"
+                        Style="{StaticResource MyBorder}"
+                        Height="40"
+                        Width="180"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="50,20,0,0">
+                <Button x:Name="ButtonAntwort7"
+                            Content="Antwort 7"
+                            Background="Transparent"
+                            FontFamily="Ravie"
+                            FontSize="22"
+                            Cursor="Hand"
+                            Click="ButtonAntwort7_Click"/>
+            </Border>
+            <Border x:Name="BorderButtonWeiterGame"
+                        Style="{StaticResource MyBorder}"
+                        Height="55"
+                        Width="225"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="50,20,0,0">
+                <Button x:Name="ButtonWeiterGame"
+                            Content="Weiter"                        
+                            Background="Transparent"
+                            FontFamily="Ravie"
+                            FontSize="30"
+                            Cursor="Hand"
+                            Click="ButtonWeiterGame_Click"/>
+            </Border>
+            <Label x:Name="LabelRetroMachine"
+                        Content="Mystery-Retro-Machine"
+                        Background="Transparent"
+                        Foreground="Navy"
+                        FontFamily="Ravie"
+                        FontSize="32"
+                        Height="50"
+                        Width="545"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        Margin="0,-499,150,0"/>
+            <Border x:Name="BorderListBoxGame"
+                        BorderBrush="Navy"
+                        BorderThickness="5"
+                        CornerRadius="5"
+                        Height="440"
+                        Width="800"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                        Margin="0,-444,35,0">
+                <ListBox x:Name="ListBoxGame"
+                             Background="Transparent"
+                             FontFamily="Garamond"
+                             FontSize="20"
+                             Visibility="Hidden"/>
+            </Border>
+            <Label x:Name="LabelStartup"
+                        Background="Transparent"
+                        Foreground="White"
+                        FontFamily="Garamond"
+                        FontSize="90"
+                        Height="100"
+                        Width="510"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="270,-450,0,0"
+                        Visibility="Hidden"/>
+        </StackPanel>
+        
+            <Label x:Name="LabelPressStart"
+                    Content="Drücke Start"
+                    Background="Transparent"
+                    Foreground="Navy"
+                    FontFamily="Ravie"
+                    FontSize="40"
+                    Height="60"
+                    Width="480"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Margin="25,650,0,0"
+                    Visibility="Visible"/>        
+        <Border x:Name="BorderStartButtonGame"
+                    Style="{StaticResource MyBorder}"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    Height="60" 
+                    Width="200"
+                    Margin="10,0,0,10">
+            <Button x:Name="StartButtonGame"
+                        Content="Start"
+                        FontFamily="Ravie"
+                        FontSize="30"
+                        Background="Transparent"                    
+                        Cursor="Hand"
+                        IsCancel="False"
+                        Click="StartButton_Click"/>
+        </Border>
+    </Grid>
+    </Border>
+</Window>
